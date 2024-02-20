@@ -100,8 +100,9 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.43.0</version>
+                <version>0.44.0</version>
                 <configuration>
+                    <verbose>true</verbose>
                     <images>
                         <image>
                             <name>springframeworkguru/${project.artifactId}</name>
