@@ -1,7 +1,7 @@
 FROM eclipse-temurin:17-jre AS builder
 WORKDIR application
-ADD target/kbe-rest-brewery-0.0.1-SNAPSHOT.jar ./
-RUN java -Djarmode=layertools -jar kbe-rest-brewery-0.0.1-SNAPSHOT.jar extract
+ADD target/${project.build.finalName}.jar ./
+RUN java -Djarmode=layertools -jar ${project.build.finalName}.jar extract
 
 FROM eclipse-temurin:17-jre
 WORKDIR application
