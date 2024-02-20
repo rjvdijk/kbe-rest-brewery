@@ -18,3 +18,7 @@ You can access the API documentation [here](https://sfg-beer-works.github.io/bre
 
 From layers
 ``` docker build -f ./src/main/docker/Dockerfile -t kbe-rest . ```
+
+Docker Hub
+
+``` mvn -Ddocker.username=<username> -Ddocker.password=<password> docker:build docker:push ``` 
